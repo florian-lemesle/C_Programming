@@ -4,13 +4,13 @@
 void compare(int x, int y)
 {
   if (x < y) {
-    printf("x is less than y");
+    printf("%i is less than %i\n",x,y);
   }
   else if (x > y) {
-    printf("x is more than y");
+    printf("%i is more than %i\n",x,y);
   }
   else {
-    printf("x is equal to y");
+    printf("%i is equal to %i\n",x,y);
   }
 }
 
