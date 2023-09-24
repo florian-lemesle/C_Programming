@@ -1,8 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
+int main(int argc, char *argv[])
 {
-    printf("Hello world!\n");
-    return 0;
+  int nombreDeVies = 5, niveau = 1;
+  
+  printf("Vous avez %d vies et vous etes au niveau %d\n", nombreDeVies, niveau);
+  
+  return 0;
 }
