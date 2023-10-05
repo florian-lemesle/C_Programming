@@ -36,7 +36,13 @@ int main()
 
     printf("Press q to quit or press c to continue\n");
 
-    scanf(" %c", &c); 
+    scanf("%c", &c);
+
+    if (c != 'c' && c != 'q')
+    {
+      printf("Please enter c or q\n");
+      c = 'c';
+    }
 
     if (c == 'q')
     {
