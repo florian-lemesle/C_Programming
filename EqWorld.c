@@ -22,7 +22,9 @@ int main()
   int num1, num2;
   char c;
 
-  while (1)
+  c = 'c';
+
+  while (c == 'c')
   {
     printf("Enter the first number: ");
     scanf("%d", &num1);
