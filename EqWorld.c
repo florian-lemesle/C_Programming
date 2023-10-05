@@ -5,27 +5,25 @@ void compare(int x, int y)
 {
   if (x < y)
   {
-    printf("%i is less than %i\n", x, y);
+    printf("%d is less than %d\n", x, y);
   }
   else if (x > y)
   {
-    printf("%i is more than %i\n", x, y);
+    printf("%d is more than %d\n", x, y);
   }
   else
   {
-    printf("%i is equal to %i\n", x, y);
+    printf("%d is equal to %d\n", x, y);
   }
 }
 
 int main()
 {
   int num1, num2;
-
   char c;
 
-  while (c != 'q')
+  while (1)
   {
-
     printf("Enter the first number: ");
     scanf("%d", &num1);
 
@@ -34,11 +32,16 @@ int main()
 
     compare(num1, num2);
 
-    printf("Press q to quit or press enter to start again!\n");
+    printf("Press q to quit or press c to continue\n");
 
-    scanf("%d", &c);
+    scanf(" %c", &c); // Use %c to read a character and add a space before %c to skip any leading whitespace
+
+    if (c == 'q')
+    {
+      break; // Exit the loop if 'q' is entered
+    }
 
   }
 
-  
+  return 0;
 }
