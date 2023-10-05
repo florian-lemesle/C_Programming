@@ -36,11 +36,11 @@ int main()
 
     printf("Press q to quit or press c to continue\n");
 
-    scanf(" %c", &c); // Use %c to read a character and add a space before %c to skip any leading whitespace
+    scanf(" %c", &c); 
 
     if (c == 'q')
     {
-      break; // Exit the loop if 'q' is entered
+      break;
     }
 
   }
