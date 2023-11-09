@@ -3,20 +3,21 @@
 
 int main() {
 
-    int a, i, n;
-    
-    printf("Veuillez saisir un nombre\n");
-    scanf("%d", &n);
+int i, j;
 
-    for (a=1, i=0; i<n ; i++)
-    {
-        a = a*(i+1);
-
+printf("x*y\t|\t");
+for(i=1;i<=10;i++)
+    printf("%d\t", i);
+printf("\n");
+for(i=1;i<=10;i++)
+    printf("---------");
+printf("\n");
+for(i=1;i<=10;i++){
+    printf("%d\t|\t",i);
+    for(j=1;j<=10;j++)
+       printf("%d\t",i*j);
+    printf("\n");
     }
 
-     printf("la factorielle est %d\n", a);
-    
     return 0;
-
-
 }
